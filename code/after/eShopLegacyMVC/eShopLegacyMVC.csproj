@@ -265,6 +265,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\Api\CatalogController.cs" />
     <Compile Include="Controllers\PicController.cs" />
+    <Compile Include="Controllers\SystemWebController.cs" />
     <Compile Include="Controllers\WebApi\FilesController.cs" />
     <Compile Include="Controllers\WebApi\BrandsController.cs" />
     <Compile Include="Models\Infrastructure\CatalogDBInitializer.cs" />
@@ -419,9 +420,11 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Views\SystemWeb\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Data\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
