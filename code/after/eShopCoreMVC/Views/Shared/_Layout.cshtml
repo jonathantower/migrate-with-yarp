@@ -1,11 +1,17 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - Catalog manager (Framework)</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+    <title>@ViewBag.Title - Catalog manager (Core)</title>
+    @*@Styles.Render("~/Content/css")*@
+    @*@Scripts.Render("~/bundles/modernizr")*@
+    <link href="/Content/bootstrap.css" rel="stylesheet">
+    <link href="/Content/custom.css" rel="stylesheet">
+    <link href="/Content/base.css" rel="stylesheet">
+    <link href="/Content/site.css" rel="stylesheet">
+    <script src="/Scripts/modernizr-2.6.2.js"></script>
+    <script src="/Scripts/modernizr-2.8.3.js"></script>
 </head>
 <body>
     @*<header class="navbar navbar-light navbar-static-top">
@@ -17,7 +23,7 @@
     </header>*@
     <section class="esh-app-hero">
         <div class="container esh-header">
-            <h1 class="esh-header-title" >Catalog manager <span>(Framework)</span></h1>
+            <h1 class="esh-header-title" >Catalog manager <span>(Core)</span></h1>
         </div>
     </section>
 
@@ -32,16 +38,17 @@
                 <section class="col-sm-6">
                     <img class="esh-app-footer-text hidden-xs" src="~/images/main_footer_text.png" width="335" height="26" alt="footer text image" />
                     <br />
-                    @{ var sessionInfo = new HtmlString($"{HttpContext.Current.Session["MachineName"]}, {HttpContext.Current.Session["SessionStartTime"]}");}
-                    <small>@sessionInfo</small>
+                    @*@{ var sessionInfo = new HtmlString($"{HttpContext.Current.Session["MachineName"]}, {HttpContext.Current.Session["SessionStartTime"]}");}
+                    <small>@sessionInfo</small>*@
                 </section>
                 
             </article>
         </div>
     </footer>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
+    <script src="/Scripts/jquery-3.3.1.js"></script>
+    <script src="/Scripts/bootstrap.js"></script>
+    <script src="/Scripts/respond.js"></script>
     @RenderSection("scripts", required: false)
 </body>
 </html>

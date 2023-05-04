@@ -6,7 +6,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eShopLegacyMVC", "eShopLega
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eShopLegacy.Utilities", "eShopLegacy.Utilities\eShopLegacy.Utilities.csproj", "{D466562E-F48C-4EF1-AE08-3A80B0ED9671}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eShopCoreMVC", "eShopCoreMVC\eShopCoreMVC.csproj", "{815D24F1-9CB2-4334-A715-890E1C2860AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eShopCoreMVC", "eShopCoreMVC\eShopCoreMVC.csproj", "{CF93D6F3-216F-4125-98EA-2E3A2359A53F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,10 +22,10 @@ Global
 		{D466562E-F48C-4EF1-AE08-3A80B0ED9671}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D466562E-F48C-4EF1-AE08-3A80B0ED9671}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D466562E-F48C-4EF1-AE08-3A80B0ED9671}.Release|Any CPU.Build.0 = Release|Any CPU
-		{815D24F1-9CB2-4334-A715-890E1C2860AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{815D24F1-9CB2-4334-A715-890E1C2860AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{815D24F1-9CB2-4334-A715-890E1C2860AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{815D24F1-9CB2-4334-A715-890E1C2860AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF93D6F3-216F-4125-98EA-2E3A2359A53F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF93D6F3-216F-4125-98EA-2E3A2359A53F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF93D6F3-216F-4125-98EA-2E3A2359A53F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF93D6F3-216F-4125-98EA-2E3A2359A53F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
