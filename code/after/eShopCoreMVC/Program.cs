@@ -1,5 +1,27 @@
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddWebOptimizer(pipeline => {
+    pipeline.AddJavaScriptBundle("/bundles/jquery",
+        "Scripts/jquery-3.3.1.js").UseContentRoot();
+
+    pipeline.AddJavaScriptBundle("/bundles/jqueryval",
+        "Scripts/jquery.validate.*").UseContentRoot();
+
+    pipeline.AddJavaScriptBundle("/bundles/modernizr",
+        "Scripts/modernizr-*").UseContentRoot();
+
+    pipeline.AddJavaScriptBundle("/bundles/bootstrap",
+        "Scripts/bootstrap.js",
+        "Scripts/respond.js").UseContentRoot();
+
+    pipeline.AddCssBundle("/Content/css",
+        "Content/bootstrap.css",
+        "Content/custom.css",
+        "Content/base.css",
+        "Content/site.css").UseContentRoot();
+});
+
 builder.Services.AddSystemWebAdapters();
 builder.Services.AddHttpForwarder();
 
@@ -14,6 +36,7 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseWebOptimizer();
 app.UseStaticFiles();
 
 app.UseRouting();
